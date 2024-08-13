@@ -1,6 +1,9 @@
 # Fetch base image file
 FROM golang:1.22.2-alpine
 
+# Command for bash functionalities
+RUN apk add --no-cache bash
+
 # Additional image meta data
 LABEL version="1.0"
 LABEL description="Image file for a website project that does ascii conversions"
